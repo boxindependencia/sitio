@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX INDEPENDENCIA</title>
+    <style>
+        body {
+            margin: 0px;
+            border: 3px solid #000000;
+            border-radius: 6PX;
+            /* Agregado "solid" para especificar el estilo del borde */
+            padding: 2PX;
+            font-family: Arial, sans-serif;
+            min-width: 50px;
+            color: #000000;
+
+        }
+
+        header {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 0px;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            height: 140px;
+            font-size: 10px;
+            margin: 0px;
+
+        }
+
+
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+
+            margin-top: 1px;
+            justify-content: center;
+        }
+
+        .image-container div {
+            width: calc(45% - 2px);
+            max-width: 600px;
+            height: auto;
+            justify-content: center;
+            margin: 8px;
+            text-align: center;
+            /* border: 2px solid #0c0c0c;*/
+
+            box-sizing: border-box;
+            padding: 0px 0px;
+            border: #000 5px double;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+        }
+
+
+        .image-container img {
+            width: 100%;
+            height: 150px;
+            border-radius: 16px 0px 0 0;
+
+            object-fit: cover;
+            cursor: pointer;
+
+
+        }
+
+        .image-container p,
+        .image-container h2 {
+            margin-top: 3px;
+            margin-bottom: 0;
+            text-align: center;
+            font-size: 14px;
+            padding: 0px;
+
+            /* Elimina el margen inferior predeterminado de las etiquetas h2 y p */
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <!-- Sección con imágenes y textos -->
+    <section>
+
+        <header>
+            <img src="IMGS/patio.jpeg" alt="Logo" style="height: 110px;width: 340px;margin-bottom: 0%;margin: 0%;">
+
+            <h2 style="margin: 0%; margin-top: 4px;">¡QUE VAS A ORDENAR <span style="color: #FFD700;margin-top: 0%;">EL
+                    DIA DE HOY!</span></h2>
+        </header>
+
+
+
+
+
+        <div class="image-container">
+
+            <!-- kAMYCHICKEN -->
+            <div>
+                <img src="IMGS/kamichicken.jpg" alt="Imagen 1" onclick="redirigirAPDF('PDF/CartakamiChicken.pdf')">
+                <h2>GASTRONOMIA PERUANA</h2>
+
+                <p style="background-color: #FFD700;border-radius: 0 0 16px 0;"
+                    onclick="rutalink('https://www.instagram.com/kamichicken.cl?igsh=OGQ5ZDc2ODk2ZA==')">
+                    <img src="IMGS/istragram.jpg" alt="Descripción de la imagen"
+                        style="width: 14px;height: 14px;border-radius: 0%;margin-top: 6px;">
+                    Kamichicken.cl
+                </p>
+
+            </div>
+
+
+            <!--PILAOS -->
+            <div id="pilao">
+                <img src="IMGS/LOGOPILAOS.jpg" alt="Imagen 2" onclick="redirigirAPDF('PDF/menupilaosfinal.pdf')">
+                <h2>GASTRONOMIA VENEZOLANA Y MAS</h2>
+                <p style="background-color: #FFD700;border-radius: 0 0 16px 0;"
+                    onclick="rutalink('https://www.instagram.com/pilaos.cl?igsh=ODA1NTc5OTg5Nw==')">
+                    <img src="IMGS/istragram.jpg" alt="Descripción de la imagen"
+                        style="width: 14px;height: 14px;border-radius: 0%;margin-top: 6px;">
+                    Pilaos.cl
+                </p>
+            </div>
+
+
+            <!-- CATIREBURGER -->
+            <div>
+                <img src="IMGS/2.jpg" alt="Imagen 1" style="width: 100%;"
+                    onclick="redirigirAPDF('PDF/Cartacatireburger.pdf')">
+                <h2>PERROS CALIENTES & BURGER</h2>
+                <p style="background-color: #FFD700;border-radius: 0 0 16px 0;"
+                    onclick="rutalink('https://www.instagram.com/catireburger_vzla?igsh=ODA1NTc5OTg5Nw==')">
+                    <img src="IMGS/istragram.jpg" alt="Descripción de la imagen"
+                        style="width: 14px;height: 14px;border-radius: 0%;margin-top: 6px;">
+                    Catireburger_vzla
+                </p>
+            </div>
+
+
+
+            <!-- MMISIRY -->
+            <div>
+                <img src="IMGS/m´misiry.jpeg" alt="Imagen 2" onclick="redirigirAPDF('')">
+                <h2>GASTRONOMIA COLOMBIANA</h2>
+                <p style="background-color: #FFD700;border-radius: 0 0 16px 0;"
+                    onclick="rutalink('https://www.instagram.com/mmisiry_fast_food?igsh=ODA1NTc5OTg5Nw==')">
+                    <img src="IMGS/istragram.jpg" alt="Descripción de la imagen"
+                        style="width: 14px;height: 14px;border-radius: 0%;margin-top: 6px;">
+                    M'misiry
+                </p>
+            </div>
+
+
+            <!-- QCACHAPAS -->
+            <div>
+                <img src="IMGS/qcachapas.jpeg" alt="Imagen 3" onclick="redirigirAPDF('PDF/Cartaqcachapasfinal.pdf')">
+                <h2>CACHAPAS Y MAS</h2>
+                <p style="background-color: #FFD700;border-radius: 0 0 16px 0;"
+                    onclick="rutalink('https://www.instagram.com/quecachapascl?igsh=ODA1NTc5OTg5Nw==')">
+                    <img src="IMGS/istragram.jpg" alt="Descripción de la imagen"
+                        style="width: 14px;height: 14px;border-radius: 0%;margin-top: 6px;">
+                    Qcachapas
+                </p>
+            </div>
+
+
+            <!-- QWENASPAPAS -->
+            <div>
+                <img src="IMGS/Logoqenaspasfinal.jpg" alt="Imagen 4"
+                    onclick="redirigirAPDF('PDF/cartaqwenaspasfinal.pdf')">
+                <h2>CONOS & BURGERS</h2>
+                <p style="background-color: #FFD700;border-radius: 0 0 16px 0;"
+                    onclick="rutalink('https://www.instagram.com/qwenaspapas.cl?igsh=ODA1NTc5OTg5Nw==')">
+                    <img src="IMGS/istragram.jpg" alt="Descripción de la imagen"
+                        style="width: 14px;height: 14px;border-radius: 0%;margin-top: 6px;">
+                    Qwenaspapas
+                </p>
+            </div>
+
+        </div>
+
+
+    </section>
+    <div style="background-color: #0c0c0c; border: 1px solid #000;border-radius: 20PX; padding: 1px;margin-top:
+        0%;margin-bottom: 2PX;text-align:center;">
+        <h2> <span style="color: #FFF; font-size: 15px;"> GRACIAS POR VISITARNOS</span></h2>*/
+
+    </div>
+
+    <script>
+        // Función para redirigir a la página PDF al hacer clic en la imagen
+        function redirigirAPDF(rutaPDF) {
+            window.location.href = rutaPDF;
+        }
+
+    </script>
+
+    <script>
+        function rutalink(url) {
+            // Redirige a la URL proporcionada
+            window.location.href = url;
+        }
+    </script>
+
+
+
+</body>
+
+</html>
